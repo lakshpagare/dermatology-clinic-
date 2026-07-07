@@ -1,0 +1,6 @@
+{
+  "name": "Belle Skin & Hair Clinic",
+  "description": "Premium luxury Skin Care, Hair Clinic & Laser Center offering expert dermatological solutions with USFDA approved technology.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

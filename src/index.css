@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-primary-base: #5B3428;
+  --color-secondary-base: #8D5A4D;
+  --color-accent-base: #C79284;
+  --color-bg-base: #FFF9F7;
+  --color-border-base: #F0E6E2;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-base);
+    color: #2B2B2B;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom design classes for the Professional Polish theme */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass {
+  background: rgba(30, 18, 15, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-primary {
+  background-color: #5B3428;
+  color: #FFFFFF;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #8D5A4D;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border: 1px solid #5B3428;
+  color: #5B3428;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  background-color: rgba(91, 52, 40, 0.05);
+  transform: translateY(-1px);
+}
